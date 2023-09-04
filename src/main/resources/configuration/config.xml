@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE   configuration 
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 클래스가 없으면 오류가 발생한다. -->
+
+	<typeAliases>
+		<typeAlias type="mjh.spring.stationery.member.dto.MemberDTO" alias="MemberDTO" />
+		<typeAlias type="mjh.spring.stationery.product.dto.ProductDTO" alias="ProductDTO"/>
+		<typeAlias type="mjh.spring.stationery.product.reply.dto.ProductReplyDTO" alias="ProductReplyDTO"/>
+	</typeAliases>
+	
+
+</configuration>

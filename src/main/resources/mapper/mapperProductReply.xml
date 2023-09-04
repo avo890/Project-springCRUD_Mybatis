@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE   mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="mjh.spring.stationery.product.reply">
+
+	<select id="selectAll" parameterType="String" resultType="ProductReplyDTO">
+		select* from product_reply
+		where productno = #{productno}
+	</select>
+
+	<insert id="insert" parameterType="ProductReplyDTO">
+		insert into product_reply (replyno, productno, id, content, replyPostDate,replyPassword)
+		values (REPLY_SEQ.NEXTVAL ,#{productno}, #{id}, #{content}, sysdate, #{replyPassword})
+	</insert>
+
+	<update id="update" parameterType="ProductReplyDTO">
+		update product_reply set content = #{content}
+		where (replyno = #{replyno} and productno = #{productno})
+	</update>
+
+	<delete id="delete" parameterType="ProductReplyDTO">
+		delete from product_reply
+		where (replyno = #{replyno} and productno = #{productno})
+	</delete>
+	
+	<select id="selectDetail" parameterType="ProductReplyDTO" resultType="ProductReplyDTO">
+	select * from product_reply
+		where (replyno = #{replyno} and productno = #{productno})				
+</select>
+
+</mapper>
+

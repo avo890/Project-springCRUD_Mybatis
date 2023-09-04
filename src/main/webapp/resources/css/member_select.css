@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body {
+	
+ 	min-height: 100vh;
+background: #f6f5f7;
+}
+
+.input-form {
+	max-width: 1500px;
+	max-height: 2000px;
+	margin-top: 50px;
+	padding: 28px;
+	background: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	margin-top: 50px;
+
+
+
+
+}
+
+button#large {
+	border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 16pt;;
+	padding: 0.5rem 1rem;
+	letter-spacing: 1px;
+
+	transition: transform 80ms ease-in;
+	width: 100%;
+}
+
+button#mini {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #fff;
+	color: #FF416C;
+	font-size: 14px;
+	width: 135px;
+	height: 38px;
+	border-color: #FF416C;
+	font-weight: bold;
+	padding: 0.25rem 0.1rem;
+
+	transition: transform 80ms ease-in;
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+legend {
+	margin-top: 60px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: -webkit-gradient(linear, left bottom, right top, from(#FF416C),
+		to(#FF4B2B));
+	background: -webkit-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: -moz-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: -o-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: linear-gradient(to top right, #FF416C 0%, #FF4B2B 100%);
+	color: #Fff;
+	-moz-border-radius: 5px;
+	font-size: 20pt;
+	
+}
+
+input[type="radio"] {
+	vertical-align: middle;
+	appearance: none;
+	border: max(1px, 0.1em) solid gray;
+	border-radius: 50%;
+	width: 1.25em;
+	height: 1.25em;
+}
+
+input[type="radio"]:checked {
+	border: 0.4em solid #FF416C;
+}
+
+input[name="genderbox"] {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+

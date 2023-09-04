@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+.container table thead {
+	float: left;
+}
+
+.container table thead tr, .container table thead tr th {
+	display: block;
+}
+
+.container table tbody {
+	display: block;
+	oveflow-x: hidden;
+	white-space: nowrap;
+}
+
+.container table tbody tr {
+	display: inline-block;
+}
+
+.container table tbody tr td {
+	display: block;
+}
+
+[출처] 가로 테이블 세로로 뒤집기  css |작성자 와이즈사람
+
+.image {
+	background-image: url("./images/nana.jpg");
+	background-size: cover;
+}
+
+.middle {
+	margin-top: 20px;
+	width: 600px;
+	height: 500px;
+	position: relative;
+}
+
+div#reply{
+	background-color: #f6f5f7;
+}
+
+.middle-left {
+	top: 0px;
+	width: 400px;
+	height: 408px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #f6f5f7;
+
+}
+
+.middle-right {
+	top: 0px;
+	left: 420px;
+	width: 400px;
+	height: 408px;
+	margin-bottom: 20px;
+	background-color: #f6f5f7;
+	text-align: left;
+	font-size: 15pt;
+}
+
+.middle-right-1 {
+	width: 380px;
+	height: 408px;
+	background-color: #FF00DD;
+}
+
+dt {
+	float: left;
+}
+
+body {
+	min-height: 100vh;
+	background: #f6f5f7;
+}
+
+.input-form {
+	max-width: 1500px;
+	max-height: 2000px;
+	margin-top: 50px;
+	padding: 28px;
+	background: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+	margin-top: 50px;
+}
+
+button#large {
+	border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 16pt;;
+	padding: 0.5rem 1rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	width: 100%;
+}
+
+textarea#mini2{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #fff;
+	font-size: 14px;
+	border-color: #FF416C;
+	font-weight: bold;
+	padding: 0.25rem 0.1rem;
+
+	transition: transform 80ms ease-in;
+}
+
+input.mini3{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #fff;
+	
+	font-size: 14px;
+
+
+	border-color: #FF416C;
+	font-weight: bold;
+	padding: 0.25rem 0.1rem;
+
+	transition: transform 80ms ease-in;
+}
+
+
+
+button#mini {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #FF4B2B;
+	background-color: #fff;
+	color: #FF416C;
+	font-size: 14px;
+	width: 135px;
+	height: 38px;
+	border-color: #FF416C;
+	font-weight: bold;
+	padding: 0.25rem 0.1rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+legend {
+	margin-top: 60px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: -webkit-gradient(linear, left bottom, right top, from(#FF416C),
+		to(#FF4B2B));
+	background: -webkit-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: -moz-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: -o-linear-gradient(bottom left, #FF416C 0%, #FF4B2B 100%);
+	background: linear-gradient(to top right, #FF416C 0%, #FF4B2B 100%);
+	color: #Fff;
+	-moz-border-radius: 5px;
+	font-size: 20pt;
+}
+
+input[type="radio"] {
+	vertical-align: middle;
+	appearance: none;
+	border: max(1px, 0.1em) solid gray;
+	border-radius: 50%;
+	width: 1.25em;
+	height: 1.25em;
+}
+
+input[type="radio"]:checked {
+	border: 0.4em solid #FF416C;
+}
+
+input[name="genderbox"] {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}

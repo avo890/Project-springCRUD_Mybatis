@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE   mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="mjh.spring.stationery.product">
+
+	<select id="selectAll" resultType="ProductDTO">
+		select num, productno, productName, salesPrice
+		from product
+		order by num
+	</select>
+
+	<select id="selectDetail" parameterType="String" resultType="ProductDTO">
+		select * from product
+		where productno = #{productno}
+	</select>
+
+	<insert id="insert" parameterType="ProductDTO">
+		insert into product (num, productno, productPassword, productName, salesPrice, inventoryQTY, productPostDate, id, productInfo)
+		values ((select max(num+1) as num from product), #{productno} ,#{productPassword}, #{productName}, #{salesPrice}, #{inventoryQTY}, sysdate, #{id}, #{productInfo})
+	</insert>
+
+	<update id="update" parameterType="ProductDTO">
+		update product set productName = #{productName}, salesPrice = #{salesPrice}, inventoryQTY = #{inventoryQTY}, productInfo=#{productInfo}
+		where productno = #{productno}
+	</update>
+
+	<delete id="delete" parameterType="String">
+		delete from product
+		where productno = #{productno}
+	</delete>
+
+</mapper>
+
