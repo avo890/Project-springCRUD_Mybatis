@@ -11,7 +11,7 @@
 
 ## 개발환경
 - spring Framework -4.3.18 release
-- STS-3.9.11
+- STS-3.9.11 (mybatis3.4.6)
 - Oracle sql Developer-20.4.1
 - apache-maven-3.9.2
 - jsp
