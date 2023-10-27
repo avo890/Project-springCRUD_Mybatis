@@ -33,5 +33,6 @@
 - 상품 게시판 관리
 - 회원 관리
 - 댓글 관리(일정 상 비동기식이 아닌 동기식)
+  +(ajax를 활용한 비동기식 댓글관리 참조 : https://velog.io/@wiz_hey/series/SpringAjaxReply)
 
 
